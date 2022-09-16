@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+	<servlet>
+	    <servlet-name>select</servlet-name>
+	    <servlet-class>com.driver.SelectServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+    	<servlet-name>select</servlet-name>
+    	<url-pattern>/select</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    	<servlet-name>DriverInsert</servlet-name>
+    	<servlet-class>com.driver.DriverInsert</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>DriverInsert</servlet-name>
+    	<url-pattern>/insert</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+		<servlet-name>UpdateDriver </servlet-name>
+		<servlet-class>com.driver.UpdateDriverServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateDriver </servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteDriver </servlet-name>
+		<servlet-class>com.driver.DeleteDriverServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteDriver </servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+    
+ </web-app>  
